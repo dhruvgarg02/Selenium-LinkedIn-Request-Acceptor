@@ -13,7 +13,7 @@ while "1" != input("press 1 when signed in: "):
     pass
 driver.get("https://linkedin.com/mynetwork/")
 sleep(2)
-buttons = driver.find_elements_by_class_name("invitation-card__action-btn")
+buttons = driver.find_elements_by_class_name("invitation-cgiard__action-btn")
 for button in buttons:
     label = button.get_attribute("aria-label");
     word = label.split(' ')[0];
